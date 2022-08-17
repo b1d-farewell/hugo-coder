@@ -38,7 +38,6 @@
         {{ .Content }}
       </div>
 
-
       <footer>
         {{ partial "posts/series.html" . }}
         {{ partial "posts/disqus.html" . }}
@@ -46,6 +45,11 @@
         {{ partial "posts/utterances.html" . }}
       </footer>
     </article>
+
+    <aside>
+      {{ .TableOfContents }}
+    </aside>
+
 
     {{ partial "posts/math.html" . }}
   </section>
